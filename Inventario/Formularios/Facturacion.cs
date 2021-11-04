@@ -15,6 +15,10 @@ namespace Inventario.Formularios
         public Facturacion()
         {
             InitializeComponent();
+           
+
         }
+
+        
     }
 }

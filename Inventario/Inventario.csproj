@@ -52,11 +52,11 @@
     <Compile Include="Formularios\Facturacion.Designer.cs">
       <DependentUpon>Facturacion.cs</DependentUpon>
     </Compile>
-    <Compile Include="Formularios\InicioSecion.cs">
+    <Compile Include="Formularios\InicioSesion.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Formularios\InicioSecion.Designer.cs">
-      <DependentUpon>InicioSecion.cs</DependentUpon>
+    <Compile Include="Formularios\InicioSesion.Designer.cs">
+      <DependentUpon>InicioSesion.cs</DependentUpon>
     </Compile>
     <Compile Include="Formularios\Inventario.cs">
       <SubType>Form</SubType>
@@ -72,8 +72,11 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="Formularios\InicioSecion.resx">
-      <DependentUpon>InicioSecion.cs</DependentUpon>
+    <EmbeddedResource Include="Formularios\Facturacion.resx">
+      <DependentUpon>Facturacion.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\InicioSesion.resx">
+      <DependentUpon>InicioSesion.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>

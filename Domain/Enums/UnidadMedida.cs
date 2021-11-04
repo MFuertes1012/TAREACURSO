@@ -4,7 +4,14 @@ using System.Text;
 
 namespace Domain.Enums
 {
-    class UnidadMedida
+    public enum UnidadMedida
     {
+        Unidades,
+        Onzas,
+        Libras,
+        Gramos,
+        Kilogramos,
+        Mililitros,
+        Litros,
     }
 }
