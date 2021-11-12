@@ -7,10 +7,10 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using Domain.Entities.Productos;
 
 namespace Inventario
 {
+    
     public partial class Prueba : Form
     {
         //Fields
@@ -89,27 +89,6 @@ namespace Inventario
             childForm.Show();
             lblTitulo.Text = childForm.Text;
 
-        }
-
-        private void btnAgregar_Click(object sender, EventArgs e)
-        {
-            Id = txtId.Text;
-            //ActivateButton(sender);
-        }
-
-        private void btnBuscar_Click(object sender, EventArgs e)
-        {
-            ActivateButton(sender);
-        }
-
-        private void btnModificar_Click(object sender, EventArgs e)
-        {
-            ActivateButton(sender);
-        }
-
-        private void btnEliminar_Click(object sender, EventArgs e)
-        {
-            ActivateButton(sender);
         }
 
         private void btnInventario_Click(object sender, EventArgs e)
