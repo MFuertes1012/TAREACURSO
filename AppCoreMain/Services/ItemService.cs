@@ -17,7 +17,11 @@ namespace AppCoreMain.Services
             this.itemRepository = itemRepository;
         }
 
-   
+        public Item FindById(int id)
+        {
+            throw new NotImplementedException();
+        }
+
         public Item[] FindByProductId(int productId)
         {
             return itemRepository.FindByProductId(productId);

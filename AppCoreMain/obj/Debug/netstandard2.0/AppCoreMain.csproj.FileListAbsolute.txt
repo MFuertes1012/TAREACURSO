@@ -1,0 +1,4 @@
+E:\Desktop\TareaDeCurso-master\AppCoreMain\obj\Debug\netstandard2.0\AppCoreMain.csprojAssemblyReference.cache
+E:\Desktop\TareaDeCurso-master\AppCoreMain\obj\Debug\netstandard2.0\AppCoreMain.csproj.CoreCompileInputs.cache
+E:\Desktop\TareaDeCurso-master\AppCoreMain\obj\Debug\netstandard2.0\AppCoreMain.AssemblyInfoInputs.cache
+E:\Desktop\TareaDeCurso-master\AppCoreMain\obj\Debug\netstandard2.0\AppCoreMain.AssemblyInfo.cs
