@@ -45,11 +45,13 @@ namespace Inventario.Forms
             this.panel1 = new System.Windows.Forms.Panel();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.panel2 = new System.Windows.Forms.Panel();
-            this.btnAgregar = new System.Windows.Forms.Button();
-            this.btnBuscar = new System.Windows.Forms.Button();
-            this.btnModificar = new System.Windows.Forms.Button();
-            this.btnEliminar = new System.Windows.Forms.Button();
             this.btnVerInventario = new System.Windows.Forms.Button();
+            this.btnEliminar = new System.Windows.Forms.Button();
+            this.btnModificar = new System.Windows.Forms.Button();
+            this.btnBuscar = new System.Windows.Forms.Button();
+            this.btnAgregar = new System.Windows.Forms.Button();
+            this.lblUnidad = new System.Windows.Forms.Label();
+            this.cmbUnidadMedida = new System.Windows.Forms.ComboBox();
             ((System.ComponentModel.ISupportInitialize)(this.nudPrecio)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.nudCantidad)).BeginInit();
             this.panel1.SuspendLayout();
@@ -177,6 +179,8 @@ namespace Inventario.Forms
             // 
             this.panel1.BackColor = System.Drawing.Color.Transparent;
             this.panel1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.panel1.Controls.Add(this.cmbUnidadMedida);
+            this.panel1.Controls.Add(this.lblUnidad);
             this.panel1.Controls.Add(this.dtpFecha);
             this.panel1.Controls.Add(this.nudCantidad);
             this.panel1.Controls.Add(this.lblDescripción);
@@ -219,65 +223,25 @@ namespace Inventario.Forms
             this.panel2.Size = new System.Drawing.Size(230, 492);
             this.panel2.TabIndex = 15;
             // 
-            // btnAgregar
+            // btnVerInventario
             // 
-            this.btnAgregar.BackColor = System.Drawing.Color.Navy;
-            this.btnAgregar.Dock = System.Windows.Forms.DockStyle.Top;
-            this.btnAgregar.FlatAppearance.BorderSize = 0;
-            this.btnAgregar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnAgregar.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnAgregar.ForeColor = System.Drawing.Color.Gainsboro;
-            this.btnAgregar.Image = ((System.Drawing.Image)(resources.GetObject("btnAgregar.Image")));
-            this.btnAgregar.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnAgregar.Location = new System.Drawing.Point(0, 0);
-            this.btnAgregar.Name = "btnAgregar";
-            this.btnAgregar.Padding = new System.Windows.Forms.Padding(12, 0, 0, 0);
-            this.btnAgregar.Size = new System.Drawing.Size(230, 78);
-            this.btnAgregar.TabIndex = 6;
-            this.btnAgregar.Text = "Agregar";
-            this.btnAgregar.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnAgregar.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.btnAgregar.UseVisualStyleBackColor = false;
-            // 
-            // btnBuscar
-            // 
-            this.btnBuscar.BackColor = System.Drawing.Color.Navy;
-            this.btnBuscar.Dock = System.Windows.Forms.DockStyle.Top;
-            this.btnBuscar.FlatAppearance.BorderSize = 0;
-            this.btnBuscar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnBuscar.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnBuscar.ForeColor = System.Drawing.Color.Gainsboro;
-            this.btnBuscar.Image = ((System.Drawing.Image)(resources.GetObject("btnBuscar.Image")));
-            this.btnBuscar.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnBuscar.Location = new System.Drawing.Point(0, 78);
-            this.btnBuscar.Name = "btnBuscar";
-            this.btnBuscar.Padding = new System.Windows.Forms.Padding(12, 0, 0, 0);
-            this.btnBuscar.Size = new System.Drawing.Size(230, 78);
-            this.btnBuscar.TabIndex = 7;
-            this.btnBuscar.Text = "Buscar";
-            this.btnBuscar.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnBuscar.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.btnBuscar.UseVisualStyleBackColor = false;
-            // 
-            // btnModificar
-            // 
-            this.btnModificar.BackColor = System.Drawing.Color.Navy;
-            this.btnModificar.Dock = System.Windows.Forms.DockStyle.Top;
-            this.btnModificar.FlatAppearance.BorderSize = 0;
-            this.btnModificar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnModificar.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnModificar.ForeColor = System.Drawing.Color.Gainsboro;
-            this.btnModificar.Image = ((System.Drawing.Image)(resources.GetObject("btnModificar.Image")));
-            this.btnModificar.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnModificar.Location = new System.Drawing.Point(0, 156);
-            this.btnModificar.Name = "btnModificar";
-            this.btnModificar.Padding = new System.Windows.Forms.Padding(12, 0, 0, 0);
-            this.btnModificar.Size = new System.Drawing.Size(230, 78);
-            this.btnModificar.TabIndex = 8;
-            this.btnModificar.Text = "Modificar";
-            this.btnModificar.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnModificar.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.btnModificar.UseVisualStyleBackColor = false;
+            this.btnVerInventario.BackColor = System.Drawing.Color.Navy;
+            this.btnVerInventario.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btnVerInventario.FlatAppearance.BorderSize = 0;
+            this.btnVerInventario.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnVerInventario.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnVerInventario.ForeColor = System.Drawing.Color.Gainsboro;
+            this.btnVerInventario.Image = ((System.Drawing.Image)(resources.GetObject("btnVerInventario.Image")));
+            this.btnVerInventario.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnVerInventario.Location = new System.Drawing.Point(0, 312);
+            this.btnVerInventario.Name = "btnVerInventario";
+            this.btnVerInventario.Padding = new System.Windows.Forms.Padding(12, 0, 0, 0);
+            this.btnVerInventario.Size = new System.Drawing.Size(230, 78);
+            this.btnVerInventario.TabIndex = 10;
+            this.btnVerInventario.Text = "Ver Inventario";
+            this.btnVerInventario.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnVerInventario.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.btnVerInventario.UseVisualStyleBackColor = false;
             // 
             // btnEliminar
             // 
@@ -299,25 +263,94 @@ namespace Inventario.Forms
             this.btnEliminar.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btnEliminar.UseVisualStyleBackColor = false;
             // 
-            // btnVerInventario
+            // btnModificar
             // 
-            this.btnVerInventario.BackColor = System.Drawing.Color.Navy;
-            this.btnVerInventario.Dock = System.Windows.Forms.DockStyle.Top;
-            this.btnVerInventario.FlatAppearance.BorderSize = 0;
-            this.btnVerInventario.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnVerInventario.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnVerInventario.ForeColor = System.Drawing.Color.Gainsboro;
-            this.btnVerInventario.Image = ((System.Drawing.Image)(resources.GetObject("btnVerInventario.Image")));
-            this.btnVerInventario.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnVerInventario.Location = new System.Drawing.Point(0, 312);
-            this.btnVerInventario.Name = "btnVerInventario";
-            this.btnVerInventario.Padding = new System.Windows.Forms.Padding(12, 0, 0, 0);
-            this.btnVerInventario.Size = new System.Drawing.Size(230, 78);
-            this.btnVerInventario.TabIndex = 10;
-            this.btnVerInventario.Text = "Ver Inventario";
-            this.btnVerInventario.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnVerInventario.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.btnVerInventario.UseVisualStyleBackColor = false;
+            this.btnModificar.BackColor = System.Drawing.Color.Navy;
+            this.btnModificar.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btnModificar.FlatAppearance.BorderSize = 0;
+            this.btnModificar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnModificar.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnModificar.ForeColor = System.Drawing.Color.Gainsboro;
+            this.btnModificar.Image = ((System.Drawing.Image)(resources.GetObject("btnModificar.Image")));
+            this.btnModificar.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnModificar.Location = new System.Drawing.Point(0, 156);
+            this.btnModificar.Name = "btnModificar";
+            this.btnModificar.Padding = new System.Windows.Forms.Padding(12, 0, 0, 0);
+            this.btnModificar.Size = new System.Drawing.Size(230, 78);
+            this.btnModificar.TabIndex = 8;
+            this.btnModificar.Text = "Modificar";
+            this.btnModificar.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnModificar.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.btnModificar.UseVisualStyleBackColor = false;
+            // 
+            // btnBuscar
+            // 
+            this.btnBuscar.BackColor = System.Drawing.Color.Navy;
+            this.btnBuscar.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btnBuscar.FlatAppearance.BorderSize = 0;
+            this.btnBuscar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnBuscar.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnBuscar.ForeColor = System.Drawing.Color.Gainsboro;
+            this.btnBuscar.Image = ((System.Drawing.Image)(resources.GetObject("btnBuscar.Image")));
+            this.btnBuscar.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnBuscar.Location = new System.Drawing.Point(0, 78);
+            this.btnBuscar.Name = "btnBuscar";
+            this.btnBuscar.Padding = new System.Windows.Forms.Padding(12, 0, 0, 0);
+            this.btnBuscar.Size = new System.Drawing.Size(230, 78);
+            this.btnBuscar.TabIndex = 7;
+            this.btnBuscar.Text = "Buscar";
+            this.btnBuscar.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnBuscar.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.btnBuscar.UseVisualStyleBackColor = false;
+            // 
+            // btnAgregar
+            // 
+            this.btnAgregar.BackColor = System.Drawing.Color.Navy;
+            this.btnAgregar.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btnAgregar.FlatAppearance.BorderSize = 0;
+            this.btnAgregar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnAgregar.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnAgregar.ForeColor = System.Drawing.Color.Gainsboro;
+            this.btnAgregar.Image = ((System.Drawing.Image)(resources.GetObject("btnAgregar.Image")));
+            this.btnAgregar.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnAgregar.Location = new System.Drawing.Point(0, 0);
+            this.btnAgregar.Name = "btnAgregar";
+            this.btnAgregar.Padding = new System.Windows.Forms.Padding(12, 0, 0, 0);
+            this.btnAgregar.Size = new System.Drawing.Size(230, 78);
+            this.btnAgregar.TabIndex = 6;
+            this.btnAgregar.Text = "Agregar";
+            this.btnAgregar.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnAgregar.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.btnAgregar.UseVisualStyleBackColor = false;
+            // 
+            // lblUnidad
+            // 
+            this.lblUnidad.AutoSize = true;
+            this.lblUnidad.BackColor = System.Drawing.Color.Transparent;
+            this.lblUnidad.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblUnidad.ForeColor = System.Drawing.Color.WhiteSmoke;
+            this.lblUnidad.Location = new System.Drawing.Point(15, 388);
+            this.lblUnidad.Name = "lblUnidad";
+            this.lblUnidad.Size = new System.Drawing.Size(271, 32);
+            this.lblUnidad.TabIndex = 12;
+            this.lblUnidad.Text = "Unidad de Medida:";
+            // 
+            // cmbUnidadMedida
+            // 
+            this.cmbUnidadMedida.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbUnidadMedida.FormattingEnabled = true;
+            this.cmbUnidadMedida.Items.AddRange(new object[] {
+            "Unidades",
+            "Onzas",
+            "Libras",
+            "Gramos",
+            "Kilogramos",
+            "Mililitros",
+            "Litros"});
+            this.cmbUnidadMedida.Location = new System.Drawing.Point(406, 388);
+            this.cmbUnidadMedida.Name = "cmbUnidadMedida";
+            this.cmbUnidadMedida.Size = new System.Drawing.Size(297, 28);
+            this.cmbUnidadMedida.TabIndex = 13;
             // 
             // FrmInventario
             // 
@@ -365,5 +398,7 @@ namespace Inventario.Forms
         private System.Windows.Forms.Button btnBuscar;
         private System.Windows.Forms.Button btnAgregar;
         private System.Windows.Forms.Button btnVerInventario;
+        private System.Windows.Forms.ComboBox cmbUnidadMedida;
+        private System.Windows.Forms.Label lblUnidad;
     }
 }
