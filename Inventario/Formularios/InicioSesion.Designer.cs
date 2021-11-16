@@ -29,137 +29,120 @@ namespace Inventario.Formularios
         /// </summary>
         private void InitializeComponent()
         {
-            this.TITULO = new System.Windows.Forms.Label();
-            this.SUBTITULO = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
-            this.label4 = new System.Windows.Forms.Label();
-            this.txtUsuario = new System.Windows.Forms.TextBox();
-            this.txtContraseña = new System.Windows.Forms.TextBox();
-            this.btnIngresar = new System.Windows.Forms.Button();
-            this.btnNoIngresar = new System.Windows.Forms.Button();
-            this.pnlinicioSesion = new System.Windows.Forms.Panel();
-            this.pnlinicioSesion.SuspendLayout();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(InicioSesion));
+            this.btnMinimizar = new System.Windows.Forms.PictureBox();
+            this.btnCerrar = new System.Windows.Forms.PictureBox();
+            this.panel1 = new System.Windows.Forms.Panel();
+            this.lblUsuario = new System.Windows.Forms.Label();
+            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.lblContra = new System.Windows.Forms.Label();
+            ((System.ComponentModel.ISupportInitialize)(this.btnMinimizar)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.btnCerrar)).BeginInit();
             this.SuspendLayout();
             // 
-            // TITULO
+            // btnMinimizar
             // 
-            this.TITULO.AutoSize = true;
-            this.TITULO.Font = new System.Drawing.Font("Berlin Sans FB", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.TITULO.ForeColor = System.Drawing.Color.White;
-            this.TITULO.Location = new System.Drawing.Point(12, 32);
-            this.TITULO.Name = "TITULO";
-            this.TITULO.Size = new System.Drawing.Size(761, 44);
-            this.TITULO.TabIndex = 0;
-            this.TITULO.Text = "SISTEMA DE INVENTARIO Y FACTURACIÓN";
+            this.btnMinimizar.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnMinimizar.BackgroundImage")));
+            this.btnMinimizar.Location = new System.Drawing.Point(656, 0);
+            this.btnMinimizar.Name = "btnMinimizar";
+            this.btnMinimizar.Size = new System.Drawing.Size(49, 21);
+            this.btnMinimizar.TabIndex = 1;
+            this.btnMinimizar.TabStop = false;
+            this.btnMinimizar.Click += new System.EventHandler(this.btnMinimizar_Click);
             // 
-            // SUBTITULO
+            // btnCerrar
             // 
-            this.SUBTITULO.AutoSize = true;
-            this.SUBTITULO.Font = new System.Drawing.Font("Constantia", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.SUBTITULO.ForeColor = System.Drawing.Color.White;
-            this.SUBTITULO.Location = new System.Drawing.Point(286, 96);
-            this.SUBTITULO.Name = "SUBTITULO";
-            this.SUBTITULO.Size = new System.Drawing.Size(202, 35);
-            this.SUBTITULO.TabIndex = 1;
-            this.SUBTITULO.Text = "Inicio de Sesión";
+            this.btnCerrar.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnCerrar.BackgroundImage")));
+            this.btnCerrar.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnCerrar.Location = new System.Drawing.Point(744, 0);
+            this.btnCerrar.Name = "btnCerrar";
+            this.btnCerrar.Size = new System.Drawing.Size(24, 25);
+            this.btnCerrar.TabIndex = 0;
+            this.btnCerrar.TabStop = false;
+            this.btnCerrar.Click += new System.EventHandler(this.btnCerrar_Click);
             // 
-            // label3
+            // panel1
             // 
-            this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Constantia", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.ForeColor = System.Drawing.Color.White;
-            this.label3.Location = new System.Drawing.Point(88, 154);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(96, 29);
-            this.label3.TabIndex = 2;
-            this.label3.Text = "Usuario";
+            this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(40)))), ((int)(((byte)(90)))));
+            this.panel1.Dock = System.Windows.Forms.DockStyle.Left;
+            this.panel1.Location = new System.Drawing.Point(0, 0);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(250, 425);
+            this.panel1.TabIndex = 2;
             // 
-            // label4
+            // lblUsuario
             // 
-            this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Constantia", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.ForeColor = System.Drawing.Color.White;
-            this.label4.Location = new System.Drawing.Point(88, 257);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(133, 29);
-            this.label4.TabIndex = 3;
-            this.label4.Text = "Contraseña";
+            this.lblUsuario.AutoSize = true;
+            this.lblUsuario.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblUsuario.ForeColor = System.Drawing.Color.LightGray;
+            this.lblUsuario.Location = new System.Drawing.Point(304, 111);
+            this.lblUsuario.Name = "lblUsuario";
+            this.lblUsuario.Size = new System.Drawing.Size(99, 30);
+            this.lblUsuario.TabIndex = 3;
+            this.lblUsuario.Text = "Usuario";
             // 
-            // txtUsuario
+            // textBox1
             // 
-            this.txtUsuario.Location = new System.Drawing.Point(156, 201);
-            this.txtUsuario.Name = "txtUsuario";
-            this.txtUsuario.Size = new System.Drawing.Size(332, 26);
-            this.txtUsuario.TabIndex = 4;
+            this.textBox1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(80)))), ((int)(((byte)(94)))), ((int)(((byte)(129)))));
+            this.textBox1.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.textBox1.Location = new System.Drawing.Point(287, 155);
+            this.textBox1.Name = "textBox1";
+            this.textBox1.Size = new System.Drawing.Size(456, 19);
+            this.textBox1.TabIndex = 4;
             // 
-            // txtContraseña
+            // textBox2
             // 
-            this.txtContraseña.Location = new System.Drawing.Point(156, 300);
-            this.txtContraseña.Name = "txtContraseña";
-            this.txtContraseña.Size = new System.Drawing.Size(332, 26);
-            this.txtContraseña.TabIndex = 5;
+            this.textBox2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(80)))), ((int)(((byte)(94)))), ((int)(((byte)(129)))));
+            this.textBox2.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.textBox2.Location = new System.Drawing.Point(287, 274);
+            this.textBox2.Name = "textBox2";
+            this.textBox2.Size = new System.Drawing.Size(456, 19);
+            this.textBox2.TabIndex = 6;
             // 
-            // btnIngresar
+            // lblContra
             // 
-            this.btnIngresar.ForeColor = System.Drawing.Color.Green;
-            this.btnIngresar.Location = new System.Drawing.Point(127, 388);
-            this.btnIngresar.Name = "btnIngresar";
-            this.btnIngresar.Size = new System.Drawing.Size(128, 30);
-            this.btnIngresar.TabIndex = 6;
-            this.btnIngresar.Text = "Iniciar Sesión";
-            this.btnIngresar.UseVisualStyleBackColor = true;
-            // 
-            // btnNoIngresar
-            // 
-            this.btnNoIngresar.ForeColor = System.Drawing.Color.Firebrick;
-            this.btnNoIngresar.Location = new System.Drawing.Point(305, 388);
-            this.btnNoIngresar.Name = "btnNoIngresar";
-            this.btnNoIngresar.Size = new System.Drawing.Size(128, 30);
-            this.btnNoIngresar.TabIndex = 7;
-            this.btnNoIngresar.Text = "Cancelar";
-            this.btnNoIngresar.UseVisualStyleBackColor = true;
-            // 
-            // pnlinicioSesion
-            // 
-            this.pnlinicioSesion.Controls.Add(this.btnNoIngresar);
-            this.pnlinicioSesion.Controls.Add(this.btnIngresar);
-            this.pnlinicioSesion.Controls.Add(this.txtContraseña);
-            this.pnlinicioSesion.Controls.Add(this.txtUsuario);
-            this.pnlinicioSesion.Controls.Add(this.label4);
-            this.pnlinicioSesion.Controls.Add(this.label3);
-            this.pnlinicioSesion.Controls.Add(this.SUBTITULO);
-            this.pnlinicioSesion.Controls.Add(this.TITULO);
-            this.pnlinicioSesion.Location = new System.Drawing.Point(15, 8);
-            this.pnlinicioSesion.Name = "pnlinicioSesion";
-            this.pnlinicioSesion.Size = new System.Drawing.Size(785, 449);
-            this.pnlinicioSesion.TabIndex = 8;
+            this.lblContra.AutoSize = true;
+            this.lblContra.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblContra.ForeColor = System.Drawing.Color.LightGray;
+            this.lblContra.Location = new System.Drawing.Point(304, 230);
+            this.lblContra.Name = "lblContra";
+            this.lblContra.Size = new System.Drawing.Size(152, 30);
+            this.lblContra.TabIndex = 5;
+            this.lblContra.Text = "Contraseña";
             // 
             // InicioSesion
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.MidnightBlue;
-            this.ClientSize = new System.Drawing.Size(823, 468);
-            this.Controls.Add(this.pnlinicioSesion);
+            this.AutoSize = true;
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(59)))), ((int)(((byte)(104)))));
+            this.ClientSize = new System.Drawing.Size(780, 425);
+            this.Controls.Add(this.textBox2);
+            this.Controls.Add(this.lblContra);
+            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.lblUsuario);
+            this.Controls.Add(this.panel1);
+            this.Controls.Add(this.btnCerrar);
+            this.Controls.Add(this.btnMinimizar);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "InicioSesion";
-            this.Text = "Inicio de sesión";
-            this.TransparencyKey = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(64)))), ((int)(((byte)(0)))));
-            this.pnlinicioSesion.ResumeLayout(false);
-            this.pnlinicioSesion.PerformLayout();
+            this.Opacity = 0.9D;
+            this.Text = "InicioSesion";
+            ((System.ComponentModel.ISupportInitialize)(this.btnMinimizar)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.btnCerrar)).EndInit();
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
         #endregion
-
-        private System.Windows.Forms.Label TITULO;
-        private System.Windows.Forms.Label SUBTITULO;
-        private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.TextBox txtUsuario;
-        private System.Windows.Forms.TextBox txtContraseña;
-        private System.Windows.Forms.Button btnIngresar;
-        private System.Windows.Forms.Button btnNoIngresar;
-        private System.Windows.Forms.Panel pnlinicioSesion;
+        private System.Windows.Forms.PictureBox btnMinimizar;
+        private System.Windows.Forms.PictureBox btnCerrar;
+        private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.Label lblUsuario;
+        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.Label lblContra;
     }
 }
