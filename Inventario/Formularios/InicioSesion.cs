@@ -7,9 +7,6 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using Microsoft.PowerBI.Api.Models;
-using Microsoft.VisualBasic.PowerPacks;
-
 
 namespace Inventario.Formularios
 {
@@ -19,16 +16,5 @@ namespace Inventario.Formularios
         {
             InitializeComponent();
         }
-
-        private void btnCerrar_Click(object sender, EventArgs e)
-        {
-            Application.Exit();
-        }
-
-        private void btnMinimizar_Click(object sender, EventArgs e)
-        {
-            WindowState = FormWindowState.Minimized;
-        }
-
     }
 }
