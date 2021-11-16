@@ -45,11 +45,12 @@ namespace Inventario.Forms
             this.panel1 = new System.Windows.Forms.Panel();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.panel2 = new System.Windows.Forms.Panel();
-            this.btnAgregar = new System.Windows.Forms.Button();
-            this.btnBuscar = new System.Windows.Forms.Button();
-            this.btnModificar = new System.Windows.Forms.Button();
-            this.btnEliminar = new System.Windows.Forms.Button();
             this.btnVerInventario = new System.Windows.Forms.Button();
+            this.btnEliminar = new System.Windows.Forms.Button();
+            this.btnModificar = new System.Windows.Forms.Button();
+            this.btnBuscar = new System.Windows.Forms.Button();
+            this.btnAgregar = new System.Windows.Forms.Button();
+            this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
             ((System.ComponentModel.ISupportInitialize)(this.nudPrecio)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.nudCantidad)).BeginInit();
             this.panel1.SuspendLayout();
@@ -63,9 +64,10 @@ namespace Inventario.Forms
             this.lblId.BackColor = System.Drawing.Color.Transparent;
             this.lblId.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblId.ForeColor = System.Drawing.Color.WhiteSmoke;
-            this.lblId.Location = new System.Drawing.Point(15, 17);
+            this.lblId.Location = new System.Drawing.Point(10, 11);
+            this.lblId.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblId.Name = "lblId";
-            this.lblId.Size = new System.Drawing.Size(49, 32);
+            this.lblId.Size = new System.Drawing.Size(33, 24);
             this.lblId.TabIndex = 0;
             this.lblId.Text = "Id:";
             // 
@@ -75,9 +77,10 @@ namespace Inventario.Forms
             this.lblNombre.BackColor = System.Drawing.Color.Transparent;
             this.lblNombre.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblNombre.ForeColor = System.Drawing.Color.WhiteSmoke;
-            this.lblNombre.Location = new System.Drawing.Point(15, 80);
+            this.lblNombre.Location = new System.Drawing.Point(10, 52);
+            this.lblNombre.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblNombre.Name = "lblNombre";
-            this.lblNombre.Size = new System.Drawing.Size(310, 32);
+            this.lblNombre.Size = new System.Drawing.Size(216, 24);
             this.lblNombre.TabIndex = 1;
             this.lblNombre.Text = "Nombre del Producto:";
             // 
@@ -87,9 +90,10 @@ namespace Inventario.Forms
             this.lblPrecio.BackColor = System.Drawing.Color.Transparent;
             this.lblPrecio.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblPrecio.ForeColor = System.Drawing.Color.WhiteSmoke;
-            this.lblPrecio.Location = new System.Drawing.Point(15, 145);
+            this.lblPrecio.Location = new System.Drawing.Point(10, 94);
+            this.lblPrecio.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblPrecio.Name = "lblPrecio";
-            this.lblPrecio.Size = new System.Drawing.Size(291, 32);
+            this.lblPrecio.Size = new System.Drawing.Size(201, 24);
             this.lblPrecio.TabIndex = 2;
             this.lblPrecio.Text = "Precio del Producto:";
             // 
@@ -99,9 +103,10 @@ namespace Inventario.Forms
             this.lblCantidad.BackColor = System.Drawing.Color.Transparent;
             this.lblCantidad.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblCantidad.ForeColor = System.Drawing.Color.WhiteSmoke;
-            this.lblCantidad.Location = new System.Drawing.Point(15, 208);
+            this.lblCantidad.Location = new System.Drawing.Point(10, 135);
+            this.lblCantidad.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblCantidad.Name = "lblCantidad";
-            this.lblCantidad.Size = new System.Drawing.Size(147, 32);
+            this.lblCantidad.Size = new System.Drawing.Size(98, 24);
             this.lblCantidad.TabIndex = 3;
             this.lblCantidad.Text = "Cantidad:";
             // 
@@ -111,9 +116,10 @@ namespace Inventario.Forms
             this.lblFecha.BackColor = System.Drawing.Color.Transparent;
             this.lblFecha.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblFecha.ForeColor = System.Drawing.Color.WhiteSmoke;
-            this.lblFecha.Location = new System.Drawing.Point(15, 335);
+            this.lblFecha.Location = new System.Drawing.Point(10, 218);
+            this.lblFecha.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblFecha.Name = "lblFecha";
-            this.lblFecha.Size = new System.Drawing.Size(317, 32);
+            this.lblFecha.Size = new System.Drawing.Size(221, 24);
             this.lblFecha.TabIndex = 4;
             this.lblFecha.Text = "Fecha de Adquisición:";
             // 
@@ -123,60 +129,68 @@ namespace Inventario.Forms
             this.lblDescripción.BackColor = System.Drawing.Color.Transparent;
             this.lblDescripción.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblDescripción.ForeColor = System.Drawing.Color.WhiteSmoke;
-            this.lblDescripción.Location = new System.Drawing.Point(15, 270);
+            this.lblDescripción.Location = new System.Drawing.Point(10, 175);
+            this.lblDescripción.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblDescripción.Name = "lblDescripción";
-            this.lblDescripción.Size = new System.Drawing.Size(184, 32);
+            this.lblDescripción.Size = new System.Drawing.Size(127, 24);
             this.lblDescripción.TabIndex = 5;
             this.lblDescripción.Text = "Descripción:";
             // 
             // txtId
             // 
-            this.txtId.Location = new System.Drawing.Point(406, 22);
+            this.txtId.Location = new System.Drawing.Point(271, 14);
+            this.txtId.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.txtId.Name = "txtId";
-            this.txtId.Size = new System.Drawing.Size(297, 26);
+            this.txtId.Size = new System.Drawing.Size(199, 20);
             this.txtId.TabIndex = 6;
             // 
             // txtNombre
             // 
-            this.txtNombre.Location = new System.Drawing.Point(406, 87);
+            this.txtNombre.Location = new System.Drawing.Point(271, 57);
+            this.txtNombre.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.txtNombre.Name = "txtNombre";
-            this.txtNombre.Size = new System.Drawing.Size(297, 26);
+            this.txtNombre.Size = new System.Drawing.Size(199, 20);
             this.txtNombre.TabIndex = 7;
             // 
             // txtDescripcion
             // 
-            this.txtDescripcion.Location = new System.Drawing.Point(406, 256);
+            this.txtDescripcion.Location = new System.Drawing.Point(271, 166);
+            this.txtDescripcion.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.txtDescripcion.Multiline = true;
             this.txtDescripcion.Name = "txtDescripcion";
-            this.txtDescripcion.Size = new System.Drawing.Size(297, 59);
+            this.txtDescripcion.Size = new System.Drawing.Size(199, 40);
             this.txtDescripcion.TabIndex = 8;
             // 
             // dtpFecha
             // 
-            this.dtpFecha.Location = new System.Drawing.Point(406, 340);
+            this.dtpFecha.Location = new System.Drawing.Point(271, 221);
+            this.dtpFecha.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.dtpFecha.Name = "dtpFecha";
-            this.dtpFecha.Size = new System.Drawing.Size(297, 26);
+            this.dtpFecha.Size = new System.Drawing.Size(199, 20);
             this.dtpFecha.TabIndex = 9;
             // 
             // nudPrecio
             // 
             this.nudPrecio.DecimalPlaces = 2;
-            this.nudPrecio.Location = new System.Drawing.Point(406, 150);
+            this.nudPrecio.Location = new System.Drawing.Point(271, 97);
+            this.nudPrecio.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.nudPrecio.Name = "nudPrecio";
-            this.nudPrecio.Size = new System.Drawing.Size(297, 26);
+            this.nudPrecio.Size = new System.Drawing.Size(198, 20);
             this.nudPrecio.TabIndex = 10;
             // 
             // nudCantidad
             // 
-            this.nudCantidad.Location = new System.Drawing.Point(406, 208);
+            this.nudCantidad.Location = new System.Drawing.Point(271, 135);
+            this.nudCantidad.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.nudCantidad.Name = "nudCantidad";
-            this.nudCantidad.Size = new System.Drawing.Size(297, 26);
+            this.nudCantidad.Size = new System.Drawing.Size(198, 20);
             this.nudCantidad.TabIndex = 11;
             // 
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.Transparent;
             this.panel1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.panel1.Controls.Add(this.dateTimePicker1);
             this.panel1.Controls.Add(this.dtpFecha);
             this.panel1.Controls.Add(this.nudCantidad);
             this.panel1.Controls.Add(this.lblDescripción);
@@ -189,9 +203,10 @@ namespace Inventario.Forms
             this.panel1.Controls.Add(this.lblPrecio);
             this.panel1.Controls.Add(this.lblCantidad);
             this.panel1.Controls.Add(this.txtDescripcion);
-            this.panel1.Location = new System.Drawing.Point(12, 200);
+            this.panel1.Location = new System.Drawing.Point(8, 130);
+            this.panel1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(734, 456);
+            this.panel1.Size = new System.Drawing.Size(489, 296);
             this.panel1.TabIndex = 13;
             // 
             // pictureBox1
@@ -200,8 +215,9 @@ namespace Inventario.Forms
             this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.pictureBox1.Dock = System.Windows.Forms.DockStyle.Top;
             this.pictureBox1.Location = new System.Drawing.Point(0, 0);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(1499, 200);
+            this.pictureBox1.Size = new System.Drawing.Size(999, 130);
             this.pictureBox1.TabIndex = 14;
             this.pictureBox1.TabStop = false;
             // 
@@ -214,10 +230,95 @@ namespace Inventario.Forms
             this.panel2.Controls.Add(this.btnBuscar);
             this.panel2.Controls.Add(this.btnAgregar);
             this.panel2.Dock = System.Windows.Forms.DockStyle.Right;
-            this.panel2.Location = new System.Drawing.Point(1269, 200);
+            this.panel2.Location = new System.Drawing.Point(846, 130);
+            this.panel2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(230, 492);
+            this.panel2.Size = new System.Drawing.Size(153, 320);
             this.panel2.TabIndex = 15;
+            // 
+            // btnVerInventario
+            // 
+            this.btnVerInventario.BackColor = System.Drawing.Color.Navy;
+            this.btnVerInventario.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btnVerInventario.FlatAppearance.BorderSize = 0;
+            this.btnVerInventario.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnVerInventario.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnVerInventario.ForeColor = System.Drawing.Color.Gainsboro;
+            this.btnVerInventario.Image = ((System.Drawing.Image)(resources.GetObject("btnVerInventario.Image")));
+            this.btnVerInventario.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnVerInventario.Location = new System.Drawing.Point(0, 204);
+            this.btnVerInventario.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnVerInventario.Name = "btnVerInventario";
+            this.btnVerInventario.Padding = new System.Windows.Forms.Padding(8, 0, 0, 0);
+            this.btnVerInventario.Size = new System.Drawing.Size(153, 51);
+            this.btnVerInventario.TabIndex = 10;
+            this.btnVerInventario.Text = "Ver Inventario";
+            this.btnVerInventario.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnVerInventario.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.btnVerInventario.UseVisualStyleBackColor = false;
+            // 
+            // btnEliminar
+            // 
+            this.btnEliminar.BackColor = System.Drawing.Color.Navy;
+            this.btnEliminar.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btnEliminar.FlatAppearance.BorderSize = 0;
+            this.btnEliminar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnEliminar.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnEliminar.ForeColor = System.Drawing.Color.Gainsboro;
+            this.btnEliminar.Image = ((System.Drawing.Image)(resources.GetObject("btnEliminar.Image")));
+            this.btnEliminar.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnEliminar.Location = new System.Drawing.Point(0, 153);
+            this.btnEliminar.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnEliminar.Name = "btnEliminar";
+            this.btnEliminar.Padding = new System.Windows.Forms.Padding(8, 0, 0, 0);
+            this.btnEliminar.Size = new System.Drawing.Size(153, 51);
+            this.btnEliminar.TabIndex = 9;
+            this.btnEliminar.Text = "Eliminar";
+            this.btnEliminar.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnEliminar.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.btnEliminar.UseVisualStyleBackColor = false;
+            // 
+            // btnModificar
+            // 
+            this.btnModificar.BackColor = System.Drawing.Color.Navy;
+            this.btnModificar.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btnModificar.FlatAppearance.BorderSize = 0;
+            this.btnModificar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnModificar.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnModificar.ForeColor = System.Drawing.Color.Gainsboro;
+            this.btnModificar.Image = ((System.Drawing.Image)(resources.GetObject("btnModificar.Image")));
+            this.btnModificar.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnModificar.Location = new System.Drawing.Point(0, 102);
+            this.btnModificar.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnModificar.Name = "btnModificar";
+            this.btnModificar.Padding = new System.Windows.Forms.Padding(8, 0, 0, 0);
+            this.btnModificar.Size = new System.Drawing.Size(153, 51);
+            this.btnModificar.TabIndex = 8;
+            this.btnModificar.Text = "Modificar";
+            this.btnModificar.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnModificar.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.btnModificar.UseVisualStyleBackColor = false;
+            // 
+            // btnBuscar
+            // 
+            this.btnBuscar.BackColor = System.Drawing.Color.Navy;
+            this.btnBuscar.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btnBuscar.FlatAppearance.BorderSize = 0;
+            this.btnBuscar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnBuscar.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnBuscar.ForeColor = System.Drawing.Color.Gainsboro;
+            this.btnBuscar.Image = ((System.Drawing.Image)(resources.GetObject("btnBuscar.Image")));
+            this.btnBuscar.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnBuscar.Location = new System.Drawing.Point(0, 51);
+            this.btnBuscar.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnBuscar.Name = "btnBuscar";
+            this.btnBuscar.Padding = new System.Windows.Forms.Padding(8, 0, 0, 0);
+            this.btnBuscar.Size = new System.Drawing.Size(153, 51);
+            this.btnBuscar.TabIndex = 7;
+            this.btnBuscar.Text = "Buscar";
+            this.btnBuscar.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnBuscar.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.btnBuscar.UseVisualStyleBackColor = false;
             // 
             // btnAgregar
             // 
@@ -230,107 +331,35 @@ namespace Inventario.Forms
             this.btnAgregar.Image = ((System.Drawing.Image)(resources.GetObject("btnAgregar.Image")));
             this.btnAgregar.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnAgregar.Location = new System.Drawing.Point(0, 0);
+            this.btnAgregar.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnAgregar.Name = "btnAgregar";
-            this.btnAgregar.Padding = new System.Windows.Forms.Padding(12, 0, 0, 0);
-            this.btnAgregar.Size = new System.Drawing.Size(230, 78);
+            this.btnAgregar.Padding = new System.Windows.Forms.Padding(8, 0, 0, 0);
+            this.btnAgregar.Size = new System.Drawing.Size(153, 51);
             this.btnAgregar.TabIndex = 6;
             this.btnAgregar.Text = "Agregar";
             this.btnAgregar.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnAgregar.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btnAgregar.UseVisualStyleBackColor = false;
             // 
-            // btnBuscar
+            // dateTimePicker1
             // 
-            this.btnBuscar.BackColor = System.Drawing.Color.Navy;
-            this.btnBuscar.Dock = System.Windows.Forms.DockStyle.Top;
-            this.btnBuscar.FlatAppearance.BorderSize = 0;
-            this.btnBuscar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnBuscar.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnBuscar.ForeColor = System.Drawing.Color.Gainsboro;
-            this.btnBuscar.Image = ((System.Drawing.Image)(resources.GetObject("btnBuscar.Image")));
-            this.btnBuscar.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnBuscar.Location = new System.Drawing.Point(0, 78);
-            this.btnBuscar.Name = "btnBuscar";
-            this.btnBuscar.Padding = new System.Windows.Forms.Padding(12, 0, 0, 0);
-            this.btnBuscar.Size = new System.Drawing.Size(230, 78);
-            this.btnBuscar.TabIndex = 7;
-            this.btnBuscar.Text = "Buscar";
-            this.btnBuscar.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnBuscar.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.btnBuscar.UseVisualStyleBackColor = false;
-            // 
-            // btnModificar
-            // 
-            this.btnModificar.BackColor = System.Drawing.Color.Navy;
-            this.btnModificar.Dock = System.Windows.Forms.DockStyle.Top;
-            this.btnModificar.FlatAppearance.BorderSize = 0;
-            this.btnModificar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnModificar.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnModificar.ForeColor = System.Drawing.Color.Gainsboro;
-            this.btnModificar.Image = ((System.Drawing.Image)(resources.GetObject("btnModificar.Image")));
-            this.btnModificar.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnModificar.Location = new System.Drawing.Point(0, 156);
-            this.btnModificar.Name = "btnModificar";
-            this.btnModificar.Padding = new System.Windows.Forms.Padding(12, 0, 0, 0);
-            this.btnModificar.Size = new System.Drawing.Size(230, 78);
-            this.btnModificar.TabIndex = 8;
-            this.btnModificar.Text = "Modificar";
-            this.btnModificar.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnModificar.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.btnModificar.UseVisualStyleBackColor = false;
-            // 
-            // btnEliminar
-            // 
-            this.btnEliminar.BackColor = System.Drawing.Color.Navy;
-            this.btnEliminar.Dock = System.Windows.Forms.DockStyle.Top;
-            this.btnEliminar.FlatAppearance.BorderSize = 0;
-            this.btnEliminar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnEliminar.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnEliminar.ForeColor = System.Drawing.Color.Gainsboro;
-            this.btnEliminar.Image = ((System.Drawing.Image)(resources.GetObject("btnEliminar.Image")));
-            this.btnEliminar.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnEliminar.Location = new System.Drawing.Point(0, 234);
-            this.btnEliminar.Name = "btnEliminar";
-            this.btnEliminar.Padding = new System.Windows.Forms.Padding(12, 0, 0, 0);
-            this.btnEliminar.Size = new System.Drawing.Size(230, 78);
-            this.btnEliminar.TabIndex = 9;
-            this.btnEliminar.Text = "Eliminar";
-            this.btnEliminar.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnEliminar.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.btnEliminar.UseVisualStyleBackColor = false;
-            // 
-            // btnVerInventario
-            // 
-            this.btnVerInventario.BackColor = System.Drawing.Color.Navy;
-            this.btnVerInventario.Dock = System.Windows.Forms.DockStyle.Top;
-            this.btnVerInventario.FlatAppearance.BorderSize = 0;
-            this.btnVerInventario.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnVerInventario.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnVerInventario.ForeColor = System.Drawing.Color.Gainsboro;
-            this.btnVerInventario.Image = ((System.Drawing.Image)(resources.GetObject("btnVerInventario.Image")));
-            this.btnVerInventario.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnVerInventario.Location = new System.Drawing.Point(0, 312);
-            this.btnVerInventario.Name = "btnVerInventario";
-            this.btnVerInventario.Padding = new System.Windows.Forms.Padding(12, 0, 0, 0);
-            this.btnVerInventario.Size = new System.Drawing.Size(230, 78);
-            this.btnVerInventario.TabIndex = 10;
-            this.btnVerInventario.Text = "Ver Inventario";
-            this.btnVerInventario.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnVerInventario.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.btnVerInventario.UseVisualStyleBackColor = false;
+            this.dateTimePicker1.Location = new System.Drawing.Point(270, 256);
+            this.dateTimePicker1.Margin = new System.Windows.Forms.Padding(2);
+            this.dateTimePicker1.Name = "dateTimePicker1";
+            this.dateTimePicker1.Size = new System.Drawing.Size(199, 20);
+            this.dateTimePicker1.TabIndex = 12;
             // 
             // FrmInventario
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(29)))), ((int)(((byte)(46)))), ((int)(((byte)(161)))));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ClientSize = new System.Drawing.Size(1499, 692);
+            this.ClientSize = new System.Drawing.Size(999, 450);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.panel1);
             this.DoubleBuffered = true;
-            this.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.Name = "FrmInventario";
             this.Text = "FrmInventario";
             ((System.ComponentModel.ISupportInitialize)(this.nudPrecio)).EndInit();
@@ -365,5 +394,6 @@ namespace Inventario.Forms
         private System.Windows.Forms.Button btnBuscar;
         private System.Windows.Forms.Button btnAgregar;
         private System.Windows.Forms.Button btnVerInventario;
+        private System.Windows.Forms.DateTimePicker dateTimePicker1;
     }
 }

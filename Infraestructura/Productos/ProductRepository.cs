@@ -9,6 +9,8 @@ namespace Infraestructura.Productos
 {
     public class ProductRepository : BaseRepository<Producto>, IProductRepository
     {
+     //   public object JsonConvert { get; private set; }
+
         public Producto GetProductoById(int id)
         {
             if (id <= 0)
@@ -33,6 +35,12 @@ namespace Infraestructura.Productos
 
             return product;
         }
+
+        //public string GetProductosAsJson()
+        //{
+        //    return JsonConvert.SerializeObject(data);
+        //}
+
         public Producto[] GetProductosByUnidadMedida(MeasureUnit um)
         {
             Producto[] tmp = null;

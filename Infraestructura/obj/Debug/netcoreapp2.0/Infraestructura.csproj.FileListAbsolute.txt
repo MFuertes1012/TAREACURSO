@@ -1,0 +1,4 @@
+E:\Desktop\TareaDeCurso-master\Infraestructura\obj\Debug\netcoreapp2.0\Infraestructura.csprojAssemblyReference.cache
+E:\Desktop\TareaDeCurso-master\Infraestructura\obj\Debug\netcoreapp2.0\Infraestructura.csproj.CoreCompileInputs.cache
+E:\Desktop\TareaDeCurso-master\Infraestructura\obj\Debug\netcoreapp2.0\Infraestructura.AssemblyInfoInputs.cache
+E:\Desktop\TareaDeCurso-master\Infraestructura\obj\Debug\netcoreapp2.0\Infraestructura.AssemblyInfo.cs

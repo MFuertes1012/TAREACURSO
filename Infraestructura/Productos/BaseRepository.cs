@@ -7,7 +7,7 @@ namespace Infraestructura.Productos
 {
     public abstract class BaseRepository<T> : IModel<T>
     {
-        protected T[] data;
+        protected T[] data;// Implementar ICollection
 
         public void Create(T t)
         {
