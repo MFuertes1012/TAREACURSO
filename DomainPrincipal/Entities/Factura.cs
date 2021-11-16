@@ -10,7 +10,6 @@ namespace Domain.Entities
         public int Id { get; set; }
         public int TotalProductos;
         public ProductoDgv [] Productos { get; set; }
-       
         
     }
 }

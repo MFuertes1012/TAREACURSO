@@ -16,9 +16,5 @@ namespace Domain.Entities.Productos
 
         public string CodigoProducto { get; set; }
 
-
-
-
-
     }
 }

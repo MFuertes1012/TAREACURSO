@@ -1,11 +1,11 @@
 {
   "version": 2,
-  "dgSpecHash": "klAj5mrvruciAOsMCn12d/PQuXNUCZk8+K8SoQtSQ7MkNCpwyoAsNZiWsW4apXUFSF77Te5tAuPxOjIGGGp0NA==",
+  "dgSpecHash": "6a/VWLRRFa0kd+E/D3OrBMS6EVYB00REj1vgJ/Hh4LiTDxI3I3oIISE/+VZ1vB5R8tdP2AU8C44DZMFAeG9AeA==",
   "success": true,
-  "projectFilePath": "C:\\Users\\STEFFANIA SALGADO\\Desktop\\TareaDeCurso.git\\DomainPrincipal\\DomainPrincipal.csproj",
+  "projectFilePath": "C:\\Users\\usuario\\Desktop\\TAREACURSO-master\\DomainPrincipal\\DomainPrincipal.csproj",
   "expectedPackageFiles": [
-    "C:\\Users\\STEFFANIA SALGADO\\.nuget\\packages\\microsoft.netcore.platforms\\1.1.0\\microsoft.netcore.platforms.1.1.0.nupkg.sha512",
-    "C:\\Users\\STEFFANIA SALGADO\\.nuget\\packages\\netstandard.library\\2.0.3\\netstandard.library.2.0.3.nupkg.sha512"
+    "C:\\Users\\usuario\\.nuget\\packages\\microsoft.netcore.platforms\\1.1.0\\microsoft.netcore.platforms.1.1.0.nupkg.sha512",
+    "C:\\Users\\usuario\\.nuget\\packages\\netstandard.library\\2.0.3\\netstandard.library.2.0.3.nupkg.sha512"
   ],
   "logs": []
 }
